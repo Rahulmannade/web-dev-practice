@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="formcontiner" id="form">
+      <h2>Registration Form Practice</h2>
+
+      <!-- Text Input -->
+      <div class="form_grup">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          class="form_r"
+          placeholder="Enter Your Full Name "
+          minlength="3"
+          maxlength="50"
+          required
+        />
+      </div>
+      <!-- Number input -->
+      <div class="form_grup">
+        <label for="mo_number"> Mobile Number</label>
+        <input
+          type="tel"
+          name="mo_number"
+          id="mo_number"
+          class="form_r"
+          maxlength="10"
+          minlength="10"
+          pattern="[0-9]{10}"
+          placeholder="Enter Your mobile number "
+          required
+          title="please enter exactly 10 digits "
+        />
+        <div class="hint">Enter 10 digitsmobile number</div>
+      </div>
+      <!-- Email -->
+      <div class="form_grup">
+        <label for="email">Enter Youre Email</label>
+        <input
+          type="email"
+          name="email"
+          class="form_r"
+          id="email"
+          placeholder="eg.. yure@email.com"
+          required
+        />
+      </div>
+      <!-- Password -->
+      <div class="form_grup">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form_r"
+          id="password"
+          name="pass"
+          maxlength="30"
+          placeholder="Enter Your Password"
+          minlength="8"
+        />
+      </div>
+
+      <!-- Age -->
+      <div class="form_grup">
+        <label for="Age">Age :</label>
+        <input
+          type="number"
+          class="form_r"
+          name="age"
+          id="age"
+          min="18"
+          max="100"
+          placeholder="18-100"
+        />
+      </div>
+      <!-- month -->
+      <div class="form_grup">
+        <label for="date">Enter Your Date of Birth </label>
+        <input type="date" class="form_r" name="dob" required id="date" />
+      </div>
+      <!-- Search  -->
+      <div class="form_grup">
+        <label for="Search">Search</label>
+        <input
+          type="search"
+          class="form_r"
+          name="Search"
+          id="search"
+          placeholder="What you want search hare !!"
+          minlength="3"
+          maxlength="70"
+        />
+      </div>
+      <!-- Radio Input  -->
+      <div class="form_grup r">
+        <label for="Gender">
+          <div class="redio-grup">
+            <div class="redio-option">
+              <input
+                type="radio"
+                name="Gender"
+                value="male"
+                id="male"
+                required
+              />
+              <label for="male">Male</label>
+            </div>
+          </div>
+          <div class="redio-grup">
+            <div class="redio-option">
+              <input type="radio" name="Gender" value="female" id="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="redio-grup">
+            <div class="redio-option">
+              <input type="radio" name="Gender" value="other" id="other" />
+              <label for="other">other</label>
+            </div>
+          </div>
+        </label>
+      </div>
+      <!-- chackbox -->
+      <div class="form_grup R">
+        <div class="form_grup">
+          <div class="checkbox-option">
+            <input type="checkbox" name="hobbies" value="gaming" id="gaming" />
+            <label for="gaming">Gameing</label>
+          </div>
+          <div class="form_grup R">
+            <div class="form_grup">
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  value="music"
+                  id="music"
+                />
+                <label for="music">Music</label>
+              </div>
+            </div>
+          </div>
+          <div class="form_grup R">
+            <div class="form_grup">
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  value="sports"
+                  id="sports"
+                />
+                <label for="sports">sports</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- textarea -->
+      <div class="form_grup">
+        <label for="textarea">Bio</label>
+        <textarea
+          name="bio"
+          id="bio"
+          rows="4"
+          class="form_r"
+          placeholder="apne baare me batiye sir"
+          maxlength="200"
+        ></textarea>
+      </div>
+      <!-- file -->
+      <div class="form_grup">
+        <label for="file">Uplode Your Profile picture</label>
+        <input
+          type="file"
+          class="form_r"
+          id="file"
+          placeholder="Enter the file"
+        />
+      </div>
+      <div class="buttun">
+        <div><input type="submit" class="buttun-option" /></div>
+        <div><input type="reset" class="buttun-option" /></div>
+      </div>
+      <div class="form-footer">
+        <p>Alredy Have accuont <a href="#">Login</a></p>
+      </div>
+    </div>
+  </body>
+</html>
